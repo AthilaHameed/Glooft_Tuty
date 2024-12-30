@@ -161,12 +161,17 @@ h6 {
   margin-right: 8px;
 }
 
-.header .logo h1 {
+@keyframes blink {
+  0% { opacity: 1; }
+  100% { opacity: 0.5; }
+}
+
+/* .header .logo h1 {
   font-size: 30px;
   margin: 0;
   font-weight: 700;
   color: var(--heading-color);
-}
+} */
 
 .scrolled .header {
   box-shadow: 0px 0 18px rgba(0, 0, 0, 0.1);
@@ -699,6 +704,7 @@ section,
 .section-title h2 {
   font-size: 32px;
   font-weight: 700;
+  font-family: initial;
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
@@ -773,6 +779,7 @@ section,
   margin: 0;
   font-size: 3rem;
   font-weight: 700;
+  font-family: initial;
 }
 
 .hero blockquote {
@@ -987,6 +994,15 @@ section,
   clip-path: inset(0);
 }
 
+.footer_testimonial {
+  padding: 110px 0 !important;
+}
+
+.tesimonial_txt {
+  font-size: 40px !important;
+  margin-bottom: 20px;
+}
+
 .call-to-action video {
   position: fixed;
   top: 0;
@@ -1019,6 +1035,7 @@ section,
 
 .call-to-action p {
   color: var(--default-color);
+  font-size: 18px;
 }
 
 .call-to-action .cta-btn {
@@ -1088,7 +1105,7 @@ section,
 
 .features .details {
   margin-top: 80px;
-  padding: 120px 0;
+  padding: 90px 0;
   background-color: color-mix(in srgb, var(--default-color), transparent 97%);
 }
 
@@ -1229,11 +1246,13 @@ font-size: 18px; /* Adjust size for icons */
   color: #1b2f45;
   font-size: 205%;
   font-weight: 700;
+  font-family: initial;
   margin-bottom: 10px;
 }
 
 .video_desc {
-  font-size: 132%;
+  font-size: 23px;
+  font-family: ui-monospace;
 }
 
 .fourth_cont_desc{
@@ -1306,6 +1325,7 @@ font-size: 18px; /* Adjust size for icons */
   color: var(--heading-color);
   font-size: 18px;
   font-weight: 700;
+  font-family: initial;
   margin: 15px 0 0 0;
   position: relative;
   transition: 0.3s;

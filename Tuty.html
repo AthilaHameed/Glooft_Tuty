@@ -15,7 +15,9 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -27,6 +29,10 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
 
   <!-- =======================================================
   * Template Name: Nova
@@ -41,12 +47,72 @@
 
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+      <nav class="navbar navbar-expand-lg custom_nav-container"
+        style="display: flex; align-items: center; justify-content: space-between; padding: 10px;position: relative; z-index: 10;">
+        <!-- Logo and Handshake Section -->
+        <div style="display: flex; align-items: center; gap: 20px;">
+          <!-- CopperPotz Logo -->
+          <img src="../assets/Tuty_edu.png.jpg" alt="Tutyedu Logo" style="
+          width: 90px; 
+          height: 90px; 
+          border-radius: 50%; 
+          overflow: hidden; 
+          object-fit: cover; 
+          animation: grow-shrink 3s ease-in-out infinite;
+        ">
 
-      <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="sitename">Tuty Edu</h1>
-      </a>
+          <!-- Handshake Icon -->
+          <i class="fas fa-handshake" style="color: white; font-size: 30px; animation: shake 2s infinite;"></i>
+          <!-- Glooft Logo -->
+          <img src="../assets/logoglooft.jpg" alt="Glooft Logo"
+            style="width: 90px; height: 90px; border-radius: 50%;animation: grow-shrink 3s ease-in-out infinite; ">
+        </div>
+
+
+
+
+        <style>
+          /* Grow and shrink animation for logos */
+          @keyframes grow-shrink {
+            0% {
+              transform: scale(1);
+            }
+
+            50% {
+              transform: scale(1.1);
+            }
+
+            100% {
+              transform: scale(1);
+            }
+          }
+
+          /* Handshake shake animation */
+          @keyframes shake {
+            0% {
+              transform: rotate(0);
+            }
+
+            25% {
+              transform: rotate(-10deg);
+            }
+
+            50% {
+              transform: rotate(10deg);
+            }
+
+            75% {
+              transform: rotate(-10deg);
+            }
+
+            100% {
+              transform: rotate(0);
+            }
+          }
+        </style>
+
+      </nav>
+
 
       <nav id="navmenu" class="navmenu">
         <ul>
@@ -59,7 +125,8 @@
           <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i
+                    class="bi bi-chevron-down toggle-dropdown"></i></a>
                 <ul>
                   <li><a href="#">Deep Dropdown 1</a></li>
                   <li><a href="#">Deep Dropdown 2</a></li>
@@ -87,7 +154,7 @@
     <section id="hero" class="hero section dark-background">
 
       <!-- <img src="assets/img/hero-bg.jpg" > -->
-      <video  class="" src="../assets/journey_with_Glooft.mp4" alt="" data-aos="fade-in" autoplay loop muted></video>
+      <video class="" src="../assets/journey_with_Glooft.mp4" alt="" data-aos="fade-in" autoplay loop muted></video>
 
       <div class="container">
         <div class="row">
@@ -100,8 +167,18 @@
                 strategies, increasing engagement and visibility.
               </p>
             </blockquote>
-            <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
-              <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
+            <div class="d-flex align-items-center" style="justify-content: flex-start; gap: 10px;" data-aos="fade-up"
+              data-aos-delay="200">
+              <a class="d-flex align-items-center " href="https://www.instagram.com/tutyedu?igsh=dmpjbjJtaG8zcXI1" target="_blank" style="text-decoration: none;">
+                <i class="fab fa-instagram" style="
+                  font-size: 61px; 
+                  padding-right: 20px;
+                  margin-left: 22px;
+                  color: #E1306C; 
+                  animation: blink 1.5s infinite alternate;
+                "></i>
+             
+              <span style="font-size: 20px; font-weight: bold; color: #E1306C;">Get in Touch</span>  </a>
             </div>
           </div>
         </div>
@@ -112,218 +189,213 @@
     <!-- Why Us Section -->
     <section id="why-us" class="why-us section">
 
-      <div class="container">
-
-        <div id="videoCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="container section-title ">
+        <h2>Services to Empower Tuty Edu</h2>
+        <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
           <div class="carousel-inner">
-              <!-- Slide 1 -->
-              <div class="carousel-item active">
-                  <div class="container d-flex flex-column flex-md-row align-items-center">
-                      <div class="col-md-6">
-                         
-                          <video class="inner_cont_image" class="" src="../assets/tuty_insta_reel.mp4" autoplay loop
-                        muted></video>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="video_inner_desc">
-                          <div class="video-head">Tuty Edu Excellence</div>
-                          <div class="video_desc">
-                              <b>HypeBoost's social media strategy</b> successfully generated over <b>2,000 leads</b> for
-                              <b>Tuty Edu</b>.
-                              By combining <b>impactful posters</b> and <b>engaging video content</b>, it built a powerful
-                              digital presence.
-                              <b>Visually striking posters</b> were strategically placed across various platforms.
-                              These were complemented by <b>teaser videos</b> that created <b>excitement</b> and
-                              <b>anticipation</b>.
-                              <b>Social media engagement</b> and timely promotions drove website traffic.
-                              Compelling calls to action converted interest into <b>valuable leads</b>.
-                              The strategy enhanced <b>brand visibility</b> and recognition.
-                              <b>Tuty Edu</b> emerged as a leader in the <b>digital education space</b>.
-                          </div>
-                      </div>
-                      </div>
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between">
+                <!-- Left Content (Image) -->
+                <div class="col-md-6 d-flex justify-content-center align-items-center">
+                  <img src="../assets/tuty_cont.jpg" alt="Slide 1"
+                    style="width: 60%; height: auto; max-width: 100%; max-height: 400px; border-radius: 10px;">
+                </div>
+                <!-- Right Content (Text) -->
+                <div class="col-md-6">
+                  <div class="content-section" style="padding: 20px;">
+                    <h3 style="font-size: 24px; font-weight: bold; margin-bottom: 15px;">Tuty Edu Excellence</h3>
+                    <p style="font-size: 16px; line-height: 1.8; color: #333;">
+                      <strong>HypeBoost Marketing</strong> strategy successfully generated over <strong>2,000
+                        leads</strong> for <strong>Tuty Edu</strong>. By combining <strong>high-impact poster
+                        campaigns</strong> and <strong>engaging video content</strong>, we created a powerful digital
+                      presence that caught the attention of potential students. Our <strong>visually striking
+                        posters</strong> were strategically placed across various platforms, complemented by
+                      <strong>teaser videos</strong> that created excitement and anticipation. Through <strong>social
+                        media engagement</strong>, timely promotions, and <strong>compelling calls to action</strong>,
+                      we drove traffic to the website and converted interest into valuable leads. This approach not only
+                      boosted <strong>brand visibility</strong> but also positioned <strong>Tuty Edu</strong> at the
+                      forefront of the <strong>digital education space</strong>.
+                    </p>
                   </div>
+                </div>
               </div>
-  
-              <!-- Slide 2 -->
-              <div class="carousel-item">
-                  <div class="container d-flex flex-column flex-md-row align-items-center">
-                      <div class="col-md-6">
-                        <img class="inner_cont_image" src="../assets/tuty_cont.jpg" alt="" class="pic">
-                      </div>
-                      <div class="col-md-6">
-                        <div class="video_inner_desc">
-                          <div class="video-head">Tuty Edu E-learning</div>
-                          <div class="video_desc">
-                              <b>EngageMax Video Strategy</b> played a <b>pivotal role</b> in generating over <b>2,000
-                                  leads</b> for <b>Tuty Edu</b>.
-                              By creating <b>viral videos</b>, it generated excitement and anticipation among <b>potential
-                                  students</b>.
-                              The videos captured attention within the <b>first few seconds</b> and were optimized for
-                              <b>social media platforms</b>.
-                              This strategy <b>maximized reach</b> and encouraged users to <b>share, comment, and engage</b>.
-                              As the videos gained traction, they drove traffic to <b>Tuty Edu's website</b>.
-                              The engaging content converted viewers into <b>actionable leads</b>.
-                              It significantly <b>boosted brand visibility</b> across platforms.
-                              <b>Tuty Edu</b> emerged as a leader in the <b>digital education space</b>.
-                          </div>
-                      </div>
-                      </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+              <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between">
+                <!-- Left Content (Image) -->
+                <div class="col-md-6 d-flex justify-content-center align-items-center">
+                  <img src="../assets/tuty_markting.jpg" alt="Slide 2"
+                    style="width: 60%; height: auto; max-width: 100%; max-height: 400px; border-radius: 10px;">
+                </div>
+                <!-- Right Content (Text) -->
+                <div class="col-md-6">
+                  <div class="content-section" style="padding: 20px;">
+                    <h3 style="font-size: 24px; font-weight: bold; margin-bottom: 15px;">Tuty Edu Marketing</h3>
+                    <p style="font-size: 16px; line-height: 1.8; color: #333;">
+                      <strong>The EngageMax Video Strategy</strong> played a pivotal role in generating over
+                      <strong>2,000 leads</strong> for <strong>Tuty Edu</strong>. By creating <strong>highly
+                        engaging</strong>, shareable <strong>viral videos</strong>, we were able to generate excitement
+                      and anticipation among potential students. These videos were crafted to <strong>capture
+                        attention</strong> within the first few seconds and were strategically <strong>optimized for
+                        social media platforms</strong> to maximize reach. The <strong>engaging video content</strong>
+                      sparked conversations, encouraging users to <strong>share, comment, and engage</strong> directly
+                      with the brand. As the videos gained traction, they drove significant traffic to <strong>Tuty
+                        Edu’s website</strong>, converting viewers into actionable leads. This strategic use of
+                      <strong>video content</strong> not only boosted <strong>brand visibility</strong> but also
+                      successfully established <strong>Tuty Edu</strong> as a leading name in the competitive
+                      <strong>digital education space</strong>.
+                    </p>
                   </div>
+                </div>
               </div>
-  
-              <!-- Slide 3 -->
-              <div class="carousel-item">
-                  <div class="container d-flex flex-column flex-md-row align-items-center">
-                      <div class="col-md-6">
-                        <img class="inner_cont_image" src="../assets/tuty_markting.jpg" alt="" class="pic">
-                      </div>
-                      <div class="col-md-6">
-                        <div class="video_inner_desc">
-                          <div class="video-head">Tuty Edu E-learning Platform</div>
-                          <div class="video_desc">
-                              <b>Tuty Edu</b> is an innovative <b>e-learning platform</b> offering a diverse range of courses.  
-                              These courses are tailored to meet the <b>needs of students</b> in various fields.  
-                              By delivering <b>cutting-edge</b> online learning experiences, it equips students with essential skills.  
-                              The platform focuses on <b>accessibility</b> and <b>high-quality education</b> for everyone.  
-                              With an emphasis on <b>personalized learning,</b> students can develop their unique strengths.  
-                              Tuty Edu helps learners build skills for <b>today's competitive job market.</b>  
-                              It ensures interactive and comprehensive <b>course offerings</b> for all.  
-                              <b>Tuty Edu</b> is committed to <b>transforming education</b> globally.
-                          </div>
-                      </div>
-                      </div>
-                  </div>
-              </div>
+            </div>
           </div>
-  
+
           <!-- Carousel Controls -->
-          <button class="carousel-control-prev" type="button" data-bs-target="#videoCarousel" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
+          <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
           </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#videoCarousel" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
+          <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
           </button>
-      </div>
-  
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+        </div>
 
-      </div>
+        <!-- Include Bootstrap JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-    </section><!-- /Why Us Section -->
+        <script>
+          document.addEventListener("DOMContentLoaded", function () {
+            const carousel = new bootstrap.Carousel(document.querySelector('#imageCarousel'), {
+              interval: 2000,
+              ride: "carousel",
+            });
+          });
+        </script>
 
-  
-   <!-- Recent Posts Section -->
-   <section id="recent-posts" class="recent-posts section">
+</body>
 
-    <!-- Section Title -->
-    <div class="container section-title" data-aos="fade-up">
-      <h2>Our Important Servies</h2>
+</div>
 
-    </div><!-- End Section Title -->
+</section><!-- /Why Us Section -->
 
-    <div class="container">
 
-      <div class="row gy-5">
+<!-- Recent Posts Section -->
+<section id="recent-posts" class="recent-posts section">
 
-        <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-          <div class="post-box">
-            <div class="post-img"> <video class="video_inner" src="../assets/Digital-Marketing-vdo.mp4" autoplay loop
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Transforming Ideas Into Action</h2>
+
+  </div><!-- End Section Title -->
+
+  <div class="container">
+
+    <div class="row gy-5">
+
+      <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="post-box">
+          <div class="post-img"> <video class="video_inner" src="../assets/consultation.png.mp4" autoplay loop
               muted></video></div>
-           
-            <h3 class="post-title">Consultation</h3>
-            <p> <b>Glooft</b> provided expert <b>consultation services</b> to Tuty Edu,
-              offering
-              tailored strategies to enhance their <b>digital presence.</b> Through
-              in-depth
-              business analysis and <b>customized recommendations,</b> we aligned
-              their goals
-              with the <b>latest industry trends.</b> Our strategic guidance enabled
-              <b>Tuty Edu</b>
-              to optimize their processes, improve engagement, and stay competitive in
-              the <b>fast-evolving education market.</b>
-            </p>
-            
-          </div>
-        </div>
 
-        <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-          <div class="post-box">
-            <div class="post-img"><video  class="video_inner" src="../assets/social-media-vdo.mp4" autoplay loop muted></video></div>
-           
-            <h3 class="post-title">Recommendations</h3>
-            <p> Based on a thorough market and competitor analysis, <b>Glooft</b>
-              recommended a
-              <b>modern digital approach</b> for <b>Tuty Edu.</b> We advised the
-              integration of
-              <b>responsive design</b> and <b>user-centric</b> features to ensure an
-              engaging
-              experience across all devices. Our recommendations also included
-              targeted <b>SEO strategies</b> and <b>social media campaigns</b> to
-              increase
-              visibility and attract a <b>wider audience,</b> ultimately improving
-              their
-              <b>market positioning.
-              </b>
-            </p>
-            
-          </div>
-        </div>
+          <h3 class="post-title">Consultation</h3>
+          <p> <b>Glooft</b> provided expert <b>consultation services</b> to Tuty Edu,
+            offering
+            tailored strategies to enhance their <b>digital presence.</b> Through
+            in-depth
+            business analysis and <b>customized recommendations,</b> we aligned
+            their goals
+            with the <b>latest industry trends.</b> Our strategic guidance enabled
+            <b>Tuty Edu</b>
+            to optimize their processes, improve engagement, and stay competitive in
+            the <b>fast-evolving education market.</b>
+          </p>
 
-        <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-          <div class="post-box">
-            <div class="post-img"> <video  class="video_inner" src="../assets/content-writing-vdo.mp4" autoplay loop muted></video></div>
-           
-            <h3 class="post-title">Social Media Management</h3>
-            <p>  <b>Glooft</b> elevated <b>Tuty Edu’s</b> social media presence by
-              implementing a
-              data-driven content strategy and consistent <b> brand messaging.</b>
-              Through
-              strategic community engagement, <b>content creation,</b> and performance
-              analysis, we boosted <b>user interaction</b> and increased brand
-              visibility.
-              Our tailored <b>>social media campaigns</b> contributed to enhanced
-              customer
-              loyalty and <b>lead generation,</b> positioning <b>Tuty Edu</b> as a
-              <b>trusted brand</b> in
-              the <b>education sector.</b>
-            </p>
-            
-          </div>
         </div>
+      </div>
 
-        <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-          <div class="post-box">
-            <div class="post-img"><video class="video_inner" src="../assets/career-growth-vdo.mp4" autoplay loop muted></video></div>
-           
-            <h3 class="post-title">Data Analysis</h3>
-            <p>  <b>Glooft</b> harnessed <b>data analysis</b> to derive actionable
-              insights for <b>Tuty
-                  Edu.</b> By analyzing user behavior, website traffic, and conversion
-              patterns, we identified areas for improvement and <b>implemented
-                  strategies</b>
-              to optimize performance. Our <b>data-driven decisions</b> led to
-              increased
-              engagement, better <b>user retention,</b> and a <b>higher ROI,</b>
-              helping Tuty Edu
-              refine its digital strategy for long-term success
-            </p>
-            
-          </div>
+      <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+        <div class="post-box">
+          <div class="post-img"><video class="video_inner" src="../assets/Recommendation.mp4" autoplay loop
+              muted></video></div>
+
+          <h3 class="post-title">Recommendations</h3>
+          <p> Based on a thorough market and competitor analysis, <b>Glooft</b>
+            recommended a
+            <b>modern digital approach</b> for <b>Tuty Edu.</b> We advised the
+            integration of
+            <b>responsive design</b> and <b>user-centric</b> features to ensure an
+            engaging
+            experience across all devices. Our recommendations also included
+            targeted <b>SEO strategies</b> and <b>social media campaigns</b> to
+            increase
+            visibility and attract a <b>wider audience,</b> ultimately improving
+            their
+            <b>market positioning.
+            </b>
+          </p>
+
         </div>
+      </div>
 
-        <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-          <div class="post-box">
-            <div class="post-img"> <video class="video_inner" src="../assets/video-edit-vdo.mp4" autoplay loop muted></video></div>
-           
-            <h3 class="post-title">Digital Marketing</h3>
-            <p> 
-              <b>Glooft</b> revolutionized <b>Tuty Edu’s digital marketing
-                strategy</b> by focusing
-            on <b>>SEO optimization</b>, social media campaigns, and content
+      <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+        <div class="post-box">
+          <div class="post-img"> <video class="video_inner" src="../assets/social-media-vdo.mp4" autoplay loop
+              muted></video></div>
+
+          <h3 class="post-title">Social Media Management</h3>
+          <p> <b>Glooft</b> elevated <b>Tuty Edu’s</b> social media presence by
+            implementing a
+            data-driven content strategy and consistent <b> brand messaging.</b>
+            Through
+            strategic community engagement, <b>content creation,</b> and performance
+            analysis, we boosted <b>user interaction</b> and increased brand
+            visibility.
+            Our tailored <b>>social media campaigns</b> contributed to enhanced
+            customer
+            loyalty and <b>lead generation,</b> positioning <b>Tuty Edu</b> as a
+            <b>trusted brand</b> in
+            the <b>education sector.</b>
+          </p>
+
+        </div>
+      </div>
+
+      <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+        <div class="post-box">
+          <div class="post-img"><video class="video_inner" src="../assets/career-growth-vdo.mp4" autoplay loop
+              muted></video></div>
+
+          <h3 class="post-title">Data Analysis</h3>
+          <p> <b>Glooft</b> harnessed <b>data analysis</b> to derive actionable
+            insights for <b>Tuty
+              Edu.</b> By analyzing user behavior, website traffic, and conversion
+            patterns, we identified areas for improvement and <b>implemented
+              strategies</b>
+            to optimize performance. Our <b>data-driven decisions</b> led to
+            increased
+            engagement, better <b>user retention,</b> and a <b>higher ROI,</b>
+            helping Tuty Edu
+            refine its digital strategy for long-term success
+          </p>
+
+        </div>
+      </div>
+
+      <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+        <div class="post-box">
+          <div class="post-img"> <video class="video_inner" src="../assets/Digital.mp4" autoplay loop muted></video>
+          </div>
+
+          <h3 class="post-title">Digital Marketing</h3>
+          <p>
+            <b>Glooft</b> revolutionized <b>Tuty Edu’s digital marketing
+              strategy</b> by focusing
+            on <b> SEO optimization</b>, social media campaigns, and content
             marketing. We
             drove <b>targeted website traffic</b>, optimized for conversion, and
             generated
@@ -334,244 +406,210 @@
             <b>Tuty Edu</b> as a leader in the digital education space, delivering
             over
             <b>3,000 qualified leads.</b>
-            </p>
-            
-          </div>
-        </div>
+          </p>
 
-        <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-          <div class="post-box">
-            <div class="post-img"><video class="video_inner" src="../assets/competiter_analysis.mp4" autoplay loop muted></video></div>
-           
-            <h3 class="post-title">Competitor Analysis</h3>
-            <p> <b>Glooft</b> provided expert <b>consultation services</b> to Tuty Edu,
-              offering
-              tailored strategies to enhance their <b>digital presence.</b> Through
-              in-depth
-              business analysis and <b>customized recommendations,</b> we aligned
-              their goals
-              with the <b>latest industry trends.</b> Our strategic guidance enabled
-              <b>Tuty Edu</b>
-              to optimize their processes, improve engagement, and stay competitive in
-              the <b>fast-evolving education market.</b>
-            </p>
-            
-          </div>
         </div>
+      </div>
 
+      <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+        <div class="post-box">
+          <div class="post-img"><video class="video_inner" src="../assets/competiter_analysis.mp4" autoplay loop
+              muted></video></div>
+
+          <h3 class="post-title">Competitor Analysis</h3>
+          <p>
+            <strong>Tuty Edu's Competitor Analysis</strong> with Glooft unlocked key insights into the digital education
+            market.
+            By identifying <strong>strengths, weaknesses, opportunities, and threats</strong>, we developed a
+            comprehensive strategy to stand out.
+            Glooft's <strong>data-driven approach</strong> ensured Tuty Edu stayed ahead of the competition by
+            optimizing its offerings and visibility.
+            This collaboration positioned Tuty Edu as a <strong>market leader</strong>, driving engagement and growth.
+          </p>
+
+        </div>
       </div>
 
     </div>
 
-  </section><!-- /Recent Posts Section -->
+  </div>
 
-    <!-- Call To Action Section -->
-    <section id="call-to-action" class="call-to-action section dark-background">
+</section><!-- /Recent Posts Section -->
 
-    
-      <video class="video_inner" src="../assets/join_glooft.mp4" autoplay loop muted></video>
+<!-- Call To Action Section -->
+<section id="call-to-action" class="call-to-action section dark-background">
 
-      <div class="container">
-        <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
-          <div class="col-xl-10">
-            <div class="text-center">
-              <h3>Transform Your Business with Glooft's Technologies!</h3>
-              <p>Elevate your brand with Glooft's cutting-edge services—from stunning web design and impactful social media marketing to insightful data analysis and strategic digital marketing. Contact us today to transform your vision into success!</p>
-              
-            </div>
-          </div>
+
+  <video class="video_inner" src="../assets/join_glooft.mp4" autoplay loop muted></video>
+
+  <div class="container">
+    <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
+      <div class="col-xl-10">
+        <div class="text-center">
+          <h3>Tuty Edu's Success Story with Glooft!</h3>
+          <p>
+            Empowering education through innovation, Glooft revolutionized Tuty Edu's digital presence with
+            transformative solutions.
+            From engaging web design and dynamic social media marketing to data-driven insights and strategic campaigns,
+            we helped Tuty Edu achieve remarkable growth and success in the digital education space.
+            Partner with Glooft today to shape your success story!
+          </p>
+
         </div>
       </div>
+    </div>
+  </div>
 
-    </section><!-- /Call To Action Section -->
+</section><!-- /Call To Action Section -->
 
-    <!-- Features Section -->
-    <section id="features" class="features section">
+<!-- Features Section -->
+<section id="features" class="features section">
 
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-7" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="mb-3">Social Media Promotion</h3>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-7" data-aos="fade-up" data-aos-delay="100">
+        <h3 class="mb-3">Social Media Promotion</h3>
 
-            <div class="row gy-4">
-
-              <div class="col-md-12">
-                <div class="fourth_cont_desc">
-                  This <b>Instagram video</b> has been <b>created</b> by <b>Glooft</b> specifically for our client,
-                  <b>Tuty Edu.</b> The purpose
-                  of this video is to promote the <b>services offered by Tuty Edu.</b> It aims to enhance <b>career
-                      growth</b>
-                  opportunities for viewers. By showcasing various <b>educational programs,</b> the <b>video
-                      highlights</b> the
-                  potential benefits of enrolling with Tuty Edu. Glooft has utilized engaging visuals and compelling
-                  narratives to capture the <b>audience's attention.</b> The collaboration emphasizes the importance
-                  of
-                  education in achieving <b>professional success.</b> This promotional effort is designed to resonate
-                  with
-                  individuals <b>seeking career advancement.</b> Through this video, <b>Tuty Edu </b>hopes to inspire
-                  and motivate
-                  prospective students. The <b>partnership between Glooft and Tuty Edu</b> reflects a commitment to
-                  <b>fostering</b>
-                  <b>educational growth.</b> Ultimately, this initiative seeks to empower individuals on their
-                  <b>career
-                      journeys.</b>
-              </div>
-              <a href="https://www.instagram.com" target="_blank" class="instagram-link">
-                  <i class="bi bi-instagram"></i><b>Get in Touch</b>
-              </a>
-              </div><!-- End Icon List Item-->
-
-
-              
-            </div>
-          </div>
-          <div class="col-lg-5 position-relative" data-aos="zoom-out" data-aos-delay="200">
-            <div class="phone-wrap">
-              <div class="phone">
-                <div class="inner_border">
-                    <!-- Status Bar -->
-                    <div class="status-bar">
-                        <div class="time">1:13</div>
-                        <div class="network-status">
-                            <i class="bi bi-reception-4"></i>
-                            <i class="bi bi-wifi"></i>
-                            <i class="bi bi-battery-half"></i>
-                        </div>
-                    </div>
-
-                    <!-- Post Video Content -->
-                    <div class="post-video">
-                        <video src="../assets/tuty_vd1.png.mp4" autoplay loop muted></video>
-                    </div>
-
-                    <!-- Footer Icons -->
-                    <div class="post-footer">
-                        <div>
-                            <i class="bi bi-heart"></i>
-                            <i class="bi bi-chat"></i>
-                            <i class="bi bi-send"></i>
-                        </div>
-                        <div class="icons-right">
-                            <i class="bi bi-bookmark"></i>
-                        </div>
-                    </div>
-
-                    <!-- Bottom Navigation Bar -->
-                    <div class="bottom-nav">
-                        <i class="bi bi-house-door active"></i>
-                        <i class="bi bi-search"></i>
-                        <i class="bi bi-plus-square"></i>
-                        <i class="bi bi-play-btn"></i>
-                        <i class="bi bi-person-circle"></i>
-                    </div>
-                    <div class="minimize_line"></div>
-                </div>
-            </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="details">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
-              
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </section><!-- /Features Section -->
-
-   
-
-  </main>
-
-  <footer id="footer" class="footer light-background">
-
-    <div class="footer-top">
-      <div class="container">
         <div class="row gy-4">
-          <div class="col-lg-5 col-md-12 footer-about">
-            <a href="index.html" class="logo d-flex align-items-center">
-              <span class="sitename">Nova</span>
-            </a>
-            <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
-            <div class="social-links d-flex mt-4">
-              <a href=""><i class="bi bi-twitter-x"></i></a>
-              <a href=""><i class="bi bi-facebook"></i></a>
-              <a href=""><i class="bi bi-instagram"></i></a>
-              <a href=""><i class="bi bi-linkedin"></i></a>
+
+          <div class="col-md-12">
+            <div class="fourth_cont_desc">
+              This <b>Instagram video</b> has been <b>created</b> by <b>Glooft</b> specifically for our client,
+              <b>Tuty Edu.</b> The purpose
+              of this video is to promote the <b>services offered by Tuty Edu.</b> It aims to enhance <b>career
+                growth</b>
+              opportunities for viewers. By showcasing various <b>educational programs,</b> the <b>video
+                highlights</b> the
+              potential benefits of enrolling with Tuty Edu. Glooft has utilized engaging visuals and compelling
+              narratives to capture the <b>audience's attention.</b> The collaboration emphasizes the importance
+              of
+              education in achieving <b>professional success.</b> This promotional effort is designed to resonate
+              with
+              individuals <b>seeking career advancement.</b> Through this video, <b>Tuty Edu </b>hopes to inspire
+              and motivate
+              prospective students. The <b>partnership between Glooft and Tuty Edu</b> reflects a commitment to
+              <b>fostering</b>
+              <b>educational growth.</b> Ultimately, this initiative seeks to empower individuals on their
+              <b>career
+                journeys.</b>
+            </div>
+
+          </div><!-- End Icon List Item-->
+
+
+
+        </div>
+      </div>
+      <div class="col-lg-5 position-relative" data-aos="zoom-out" data-aos-delay="200">
+        <div class="phone-wrap">
+          <div class="phone">
+            <div class="inner_border">
+              <!-- Status Bar -->
+              <div class="status-bar">
+                <div class="time">1:13</div>
+                <div class="network-status">
+                  <i class="bi bi-reception-4"></i>
+                  <i class="bi bi-wifi"></i>
+                  <i class="bi bi-battery-half"></i>
+                </div>
+              </div>
+
+              <!-- Post Video Content -->
+              <div class="post-video">
+                <video src="../assets/tuty_vd1.png.mp4" autoplay loop muted></video>
+              </div>
+
+              <!-- Footer Icons -->
+              <div class="post-footer">
+                <div>
+                  <i class="bi bi-heart"></i>
+                  <i class="bi bi-chat"></i>
+                  <i class="bi bi-send"></i>
+                </div>
+                <div class="icons-right">
+                  <i class="bi bi-bookmark"></i>
+                </div>
+              </div>
+
+              <!-- Bottom Navigation Bar -->
+              <div class="bottom-nav">
+                <i class="bi bi-house-door active"></i>
+                <i class="bi bi-search"></i>
+                <i class="bi bi-plus-square"></i>
+                <i class="bi bi-play-btn"></i>
+                <i class="bi bi-person-circle"></i>
+              </div>
+              <div class="minimize_line"></div>
             </div>
           </div>
-
-          <div class="col-lg-2 col-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About us</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Terms of service</a></li>
-              <li><a href="#">Privacy policy</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-2 col-6 footer-links">
-            <h4>Our Services</h4>
-            <ul>
-              <li><a href="#">Web Design</a></li>
-              <li><a href="#">Web Development</a></li>
-              <li><a href="#">Product Management</a></li>
-              <li><a href="#">Marketing</a></li>
-              <li><a href="#">Graphic Design</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-            <h4>Contact Us</h4>
-            <p>A108 Adam Street</p>
-            <p>New York, NY 535022</p>
-            <p>United States</p>
-            <p class="mt-4"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-            <p><strong>Email:</strong> <span>info@example.com</span></p>
-          </div>
-
         </div>
       </div>
     </div>
 
-    <div class="container copyright text-center">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Nova</strong> <span>All Rights Reserved</span></p>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a href="https://themewagon.com">ThemeWagon</a>
+  </div>
+
+  <div class="details">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section><!-- /Features Section -->
+
+
+
+</main>
+
+<footer id="footer" class="footer light-background">
+
+  <!-- Call To Action Section -->
+  <section id="call-to-action" class="call-to-action footer_testimonial section dark-background">
+
+
+    <video class="video_inner" src="../assets/students_happy.mp4" autoplay loop muted></video>
+
+    <div class="container">
+      <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
+        <div class="col-xl-12">
+          <div class="text-center">
+            <h3 class="tesimonial_txt">Testimonials</h3>
+            <p>Glooft Technologies transformed our vision into reality with a sleek, user-friendly, and highly
+              interactive e-learning platform that our students love!</p>
+            <p>The team at Glooft Technologies impressed us with their professionalism, timely delivery, and innovative
+              solutions that elevated Tuty Edu to the next level</p>
+            <p>Partnering with Glooft Technologies was the best decision we made; their expertise brought our e-learning
+              ideas to life seamlessly!</p>
+          </div>
+        </div>
       </div>
     </div>
 
-  </footer>
+  </section><!-- /Call To Action Section -->
 
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+</footer>
 
-  <!-- Preloader -->
-  <div id="preloader"></div>
+<!-- Scroll Top -->
+<a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+    class="bi bi-arrow-up-short"></i></a>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<!-- Preloader -->
+<div id="preloader"></div>
 
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
+<!-- Vendor JS Files -->
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/php-email-form/validate.js"></script>
+<script src="assets/vendor/aos/aos.js"></script>
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+<!-- Main JS File -->
+<script src="assets/js/main.js"></script>
 
 </body>
 
