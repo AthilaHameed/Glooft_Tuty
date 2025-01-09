@@ -233,8 +233,8 @@
         border-top-left-radius: 34px;
         /* margin-top: 1em; */
         font-weight: 500;
-        color: #3e3c3c;
-        background-color: rgba(0, 0, 0, 0.1);
+        color: #fff;
+        background-color: rgb(33 41 49 / 19%);
         font-family: emoji;
         margin-left: 4.66em;
         z-index: 20;
@@ -248,7 +248,7 @@
         width: 56%;
         justify-content: center;
         gap: 2em;
-        background-color: rgba(0, 0, 0, 0.1);
+        background-color: rgb(33 41 49 / 19%);
         margin-top: -65px;
         /* margin-right: -44em; */
         padding: 3em 2.5em;
@@ -280,8 +280,8 @@
          border-top-right-radius: 34px;
          border-top-left-radius: 34px;
          font-weight: 500;
-         color: #3e3c3c;
-         background-color: rgba(0, 0, 0, 0.1);
+         color:#fff;
+         background-color: rgb(33 41 49 / 19%);
          font-family: emoji;
          margin-left: 0;
          z-index: 20;
@@ -318,8 +318,8 @@
          border-top-right-radius: 34px;
          border-top-left-radius: 34px;
          font-weight: 500;
-         color: #3e3c3c;
-         background-color: rgba(0, 0, 0, 0.1);
+         color: #fff;
+         background-color: rgb(33 41 49 / 19%);
          font-family: emoji;
          margin-left: 0;
          z-index: 20;
